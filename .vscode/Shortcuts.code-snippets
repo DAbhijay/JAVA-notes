@@ -1,0 +1,19 @@
+{
+  "Print to console": {
+    "prefix": "sout",
+    "body": [
+      "System.out.println($1);"
+    ],
+    "description": "Prints to console"
+  },
+
+  "Main method": {
+    "prefix": "main",
+    "body": [
+      "public static void main(String[] args) {",
+      "    $1",
+      "}"
+    ],
+    "description": "Creates main method"
+  }
+}
