@@ -3,6 +3,10 @@ class Parent {
         System.out.println("Parent class");
     }
 
+    Parent(int x) {
+        System.out.println("Parent constructor with x = " + x);
+    }
+
     void print(int x){
         System.out.println("Value of x = " + x);
     }
@@ -11,6 +15,11 @@ class Parent {
 class Child extends Parent {
     void show() {
         System.out.println("Child class");
+    }
+
+    Child() {
+        super();
+        System.out.println("Child constructor");
     }
 
     void print(int x, int y){
@@ -25,5 +34,6 @@ public class Override {
 
         Parent p = new Child();
         p.show();
+        p.print(10);
     }
 }
